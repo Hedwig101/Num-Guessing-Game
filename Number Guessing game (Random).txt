@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int number= (rand() %10)+1; //0-9 + 1--> 1-10
+    int guess=0;
+        cout<<"Enter guess (1-10):\n";  
+      cin>> guess;
+      
+     if(guess>number)
+        cout<<"Guess Lower"<<endl;  
+      
+      else if(guess<number)
+          cout<<"Guess Higher"<<endl; 
+    else
+          cout<<"You won"<<endl; 
+	return 0;
+}
